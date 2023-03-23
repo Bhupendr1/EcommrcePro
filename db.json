@@ -1,0 +1,272 @@
+{
+  "seller": [
+    {
+      "name": "admin@admin.com",
+      "email": "9118686068",
+      "password": "111111",
+      "id": 1
+    },
+    {
+      "name": "Rakesh Sonkar",
+      "email": "sapna2661@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Rakesh Sonkar",
+      "email": "admin@admin.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "bhup",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "Bhupendra",
+      "email": "bhupendranirwan737@gmail.com",
+      "password": "123123",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "Galaxy S23 Ultra (12GB / 256GB)",
+      "price": "1240000",
+      "color": "black",
+      "category": "Mobile",
+      "discription": "samsung is the good smart phone",
+      "image": "https://images.samsung.com/in/smartphones/galaxy-s23-ultra/buy/product_color_green.png?imwidth=480",
+      "id": 1
+    },
+    {
+      "name": "iphone",
+      "price": "80000",
+      "color": "GOLD",
+      "category": "Mobile",
+      "discription": "GOOD PRODUCT",
+      "image": "https://www.apple.com/v/iphone-14/e/images/key-features/features/size/dd_size_v__faidcvs4aamy_large_2x.jpg",
+      "id": 2
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "id": 3
+    },
+    {
+      "name": "levi's jean",
+      "price": "7000",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "id": 4
+    },
+    {
+      "name": "Adidas Tshirt",
+      "price": "420",
+      "color": "whiteq",
+      "category": "t shirt",
+      "discription": "good t shirt",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/562544e9f8b8487aaa9daebb0157ea76_9366/3_STRIPES_PIQUE_POLO_SHIRT_White_H18923_22_model.jpg",
+      "id": 5
+    },
+    {
+      "name": "adidas - Men Trainers EQ21 Run Shoes",
+      "price": "3500",
+      "color": "White",
+      "category": "Shoes",
+      "discription": "light weight shoes",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f28d9b892d8147e8bf0aae6f016a26c8_9366/EQ21_Run_Shoes_White_GX9797_01_standard.jpg",
+      "id": 6
+    },
+    {
+      "name": "REVOLUTION 6 NN Running Shoes For Men  (Red)",
+      "price": "2771",
+      "color": "red",
+      "category": "Shoes",
+      "discription": "comfortable",
+      "image": "https://rukminim1.flixcart.com/image/832/832/l4d2ljk0/shoe/p/e/n/-original-imagf9vmqgwdjhz6.jpeg?q=70",
+      "id": 7
+    },
+    {
+      "name": "Galaxy S23 Ultra (12GB / 256GB)",
+      "price": "1240000",
+      "color": "black",
+      "category": "Mobile",
+      "discription": "samsung is the good smart phone",
+      "image": "https://images.samsung.com/in/smartphones/galaxy-s23-ultra/buy/product_color_green.png?imwidth=480",
+      "quantity": 1,
+      "userId": 8,
+      "productId": 1,
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "bhupendra",
+      "email": "bhupendranirwan737@gmail.com",
+      "password": "123123",
+      "id": 1
+    },
+    {
+      "name": "bhupendra",
+      "email": "sdf@gmailc.om",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "bhupendra",
+      "email": "sdf@gmailc.om",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "bhupendra",
+      "email": "sdf@gmailc.om",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "bhupendra",
+      "email": "sdf@gmailc.om",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "bhupendra",
+      "email": "sdf@gmailc.om",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "name": "bhupendra",
+      "email": "sdf@gmailc.om",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "name": "bhuepndra",
+      "email": "bhupendranirwan737@gmail.com",
+      "password": "abc123",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "bhupendranirwan737@gmail.com",
+      "password": "abc123",
+      "id": 9
+    },
+    {
+      "name": "rakesh",
+      "email": "ABC123@GMAIL.COM",
+      "password": "123123",
+      "id": 10
+    }
+  ],
+  "cart": [
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 6
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 7
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 8
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 9
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 10
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 11
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 12
+    },
+    {
+      "name": "levi's jeans",
+      "price": "4500",
+      "color": "stripped blue",
+      "category": "jeans",
+      "discription": "good quality",
+      "image": "https://imagescdn.allensolly.com/img/app/product/7/727319-8065012.jpg?q=75&auto=format&w=342",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 13
+    }
+  ],
+  "orders": []
+}
