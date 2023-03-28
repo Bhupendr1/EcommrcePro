@@ -1,35 +1,87 @@
-<nav class="nav">
-    <h1><a routerLink="/">R-ecom</a></h1>
-    <div *ngIf="menuType!=='seller'" class="nav-search">
-        <input #searchInput type="text" (keyup)="serchProduct($event)" (blur)="hideSerch()"
-            placeholder="Search Products" />
-        <button (click)="submitSearch(searchInput.value)">Search</button>
-        <ul class="Suggested-result" *ngIf="searchResult">
-            <li *ngFor="let item of searchResult">
-                <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
-            </li>
-        </ul>
-    </div>
-    <div [ngSwitch]="menuType">
-        <ul *ngSwitchCase="'default'">
-            <li><a routerLink="seller-auth">seller</a></li>
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="user-auth">Login/Sign-Up</a></li>
-            <li><a>Cart({{cartItems}})</a></li>
-        </ul>
-        <ul *ngSwitchCase="'user'">
-            <li><a routerLink="seller-auth">seller</a></li>
-            <li><a>Home</a></li>
-            <li><a>{{userName | titlecase}}</a></li>
-            <li><a routerLink="my-orders">My-Orders</a></li>
-            <li><a (click)="userLogOut()">Logout</a></li>
-            <li><a [routerLink]="cartItems>0? 'cart-page':null">Cart({{cartItems}})</a></li>
-        </ul>
-        <ul *ngSwitchCase="'seller'">
-            <li><a routerLink="seller-home">Product List</a></li>
-            <li><a routerLink="seller-add-product">Add Product</a></li>
-            <li><a (click)="logout()">Logout</a></li>
-            <li><a>{{SellerName | titlecase}}</a></li>
-        </ul>
-    </div>
-</nav>
+
+ <header class="section-header">	
+    <section class="header-main">
+      <div class="container">
+        <div class="">
+          <div class="col-lg-2 col-sm-4 col-4">
+            <img src="assets/image/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" routerLink="/" style="cursor: pointer;">
+          </div>
+          <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+            <div class="float-end">
+                <div [ngSwitch]="menuType">
+                    <div *ngSwitchCase="'default'">
+                        <li><a routerLink="seller-auth">seller</a></li>
+                         <li><a routerLink="user-auth">Login/Sign-Up</a></li>
+                        <li><a href="#">Cart({{cartItems}})</a></li>
+                        <a href="#" class="btn btn-light" routerLink="seller-auth"> 
+                       <span class="ms-1">seller</span>   
+                        </a>
+                        <a class="btn btn-light" routerLink="user-auth"> 
+                       <span class="ms-1">Login/Sign-Up</span> 
+                        </a>
+                        <a class="btn btn-light" routerLink="user-auth"> 
+                        <span class="ms-1">Login/Sign-Up</span> 
+                        </a>
+                         <a class="btn btn-light" (click)="userLogOut()"> 
+                            <span class="ms-1">Logout</span> 
+                         </a>
+                        <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light" [routerLink]="cartItems>0? 'cart-page':null"> 
+                        <i class="fa fa-shopping-cart"></i> <span class="ms-1">{{cartItems}}</span> 
+                        </a>
+                    </div>
+                    <div *ngSwitchCase="'user'">
+                        <div class="dropdown">
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Profile
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item">{{userName | titlecase}}</a></li>
+                              <li><a class="dropdown-item" routerLink="seller-auth">Admin</a></li>
+                              <li><a class="dropdown-item" routerLink="my-orders">My-Orders</a></li>
+                              <li><a class="dropdown-item" (click)="userLogOut()" style="cursor: pointer;">Logout</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-light position-relative" [routerLink]="cartItems>0? 'cart-page':null">
+                                <i class="fa fa-shopping-cart" style="scale:1.5"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    <span class="text-black">{{cartItems}}</span>
+                                  <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div *ngSwitchCase="'seller'">
+                        <a href="#" class="btn btn-light"> 
+                            <i class="fa fa-user"></i>  <span class="ms-1">{{SellerName | titlecase}}</span> 
+                        </a>
+                        <a href="#" class="btn btn-light" routerLink="seller-add-product"> 
+                        <i class="fa fa-heart"></i>  <span class="ms-1">Product List</span>   
+                        </a>
+                        <a class="btn btn-light" routerLink="seller-add-product"> 
+                        <i class="fa fa-shopping-cart"></i> <span class="ms-1">Add Product</span> 
+                        </a>
+                         <a class="btn btn-light" (click)="logout()"> 
+                        <i class="fa fa-shopping-cart"></i> <span class="ms-1">Logout</span> 
+                         </a>
+                    </div>
+                </div>
+            </div>
+          </div> 
+          <div class="col-lg-5 col-md-12 col-12">
+            <div *ngIf="menuType!=='seller'" class="nav-search">       
+                    <div class="input-group">
+                      <input #searchInput (keyup)="serchProduct($event)" (blur)="hideSerch()" type="search" class="form-control" style="width:55%" placeholder="Search product">
+                      <button (click)="submitSearch(searchInput.value)" class="btn btn-warning">
+                        <i class="fa fa-search"></i> 
+                      </button>
+                    </div> 
+                    <ul class="Suggested-result" *ngIf="searchResult">
+                        <li *ngFor="let item of searchResult"><a (mousedown)="redirectToDetails(item.id)" href="">{{item.name}}</a></li>
+                    </ul>
+
+             </div>
+          </div> 
+        </div> 
+      </div> 
+    </section>
+  </header> 

@@ -10,7 +10,7 @@ import { ProductserviceService } from '../services/productservice.service';
 })
 export class CartPageComponent implements OnInit {
   cartData: cart[] | undefined
-  priceSummary: PriceSummary = {
+    priceSummary: PriceSummary = {
     price: 0,
     discount: 0,
     tax: 0,
@@ -20,7 +20,7 @@ export class CartPageComponent implements OnInit {
   constructor(private product: ProductserviceService,private router :Router) { }
 
   ngOnInit(): void {
-this.loadDetails()
+  this.loadDetails()
   }
   checkOut(){
     this.router.navigate(['/checkout'])

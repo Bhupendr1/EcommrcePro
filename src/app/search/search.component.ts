@@ -9,11 +9,14 @@ import { ProductserviceService } from '../services/productservice.service';
 })
 export class SearchComponent implements OnInit {
   searchResult: undefined | product[]
+  content: string='';
   constructor(private activeRoute: ActivatedRoute, private product: ProductserviceService) { }
   ngOnInit() {
-    let query = this.activeRoute.snapshot.paramMap.get('query')
-    query && this.product.SearchProducts(query).subscribe((result) => {
-      this.searchResult = result
-     })
+    this.activeRoute.params.subscribe((params) => {
+      this.content = params['query'];
+      this.product.SearchProducts(this.content).subscribe((response: product[]) => {
+        this.searchResult = response;
+      });
+    });
   }
 }
